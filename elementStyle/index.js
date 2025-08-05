@@ -1,7 +1,19 @@
 const revealBtn = document.getElementById('reveal-btn')
+const question = document.getElementById('question')
 
 revealBtn.addEventListener('click', function(){
-
+   
+   answer.style.display="block"
+   question.style.background="#68e1fd"
+   question.style.color="#1434A4"
+   revealBtn.style.display="none"
+   
+//    this.innerHTML=`<style>
+// .answer{
+//     display: block;
+//    //  background-color: #68e1fd;
+//    // color:#1434A4 ;  
+// }</style>`
 })
 
 /*

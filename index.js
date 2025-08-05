@@ -1,3 +1,56 @@
+const modol=document.getElementById("modal")
+modol.style.display="none"
+function model(){
+
+    modol.style.display="block"
+}
+setTimeout(model,1500)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // // console.log(1)
 
 // // // setTimeout(function(){
