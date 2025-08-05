@@ -1,12 +1,16 @@
 const modol=document.getElementById("modal")
-modol.style.display="none"
+const closeBtn= document.getElementById("modal-close-btn")
+// modol.style.display="none"
 function model(){
 
     modol.style.display="block"
 }
 setTimeout(model,1500)
 
+closeBtn.addEventListener("click",function(){
 
+    modol.style.display="none"
+})
 
 
 

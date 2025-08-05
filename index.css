@@ -75,7 +75,7 @@ Challenge:
    property to 'none'.
 */
  
-
+    display: none;
     height: 420px;
     width: 350px;
     border-radius: 5px;
