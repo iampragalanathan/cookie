@@ -20,6 +20,9 @@
                     id="astronautName" 
                     name="astronautName"
                     placeholder="Neil Armstrong"
+                    minlength="3"
+                    maxlength="15"
+
                     >
               <label for="astronautName">How old are you?</label>
 <!-- Challenge:
@@ -32,6 +35,8 @@
                     id="astronautAge" 
                     name="astronautAge"
                     placeholder="21"
+                    min="18"
+                    max="55"
                     >
               <label for="astronautName">Country Code</label>
 <!-- Challenge:
@@ -49,6 +54,7 @@
                     id="astronautCountryCode" 
                     name="astronautCountryCode"
                     placeholder="Fra"
+                    pattern="[a-zA-z]{3}"
                     > 
                 <button type="submit">submit</button>
             </form>    
