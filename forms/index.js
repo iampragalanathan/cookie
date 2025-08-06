@@ -1,5 +1,5 @@
 const loginForm=document.getElementById("login-form")
-console.log("form refreshed the js")
+// console.log("form refreshed the js")
 
 loginForm.addEventListener("submit",function(e){
 
