@@ -1,5 +1,5 @@
 const sortBtn = document.getElementById("sort-btn");
-const container=document.getElementById(".container")
+const container=document.querySelector(".container")
 
 
 sortBtn.addEventListener("click", function () {
