@@ -1,11 +1,9 @@
 const sortBtn = document.getElementById("sort-btn");
 
 
-sortBtn.addEventListener("click", function () {
+sortBtn.addEventListener("mouseenter", function () {
+
+   container.classList.toggle("reverse")
  
-  /*
-Challenge:
-1. Make the Sort by Price button 
-   reverse the order of the paintings.
-*/
+
 });
