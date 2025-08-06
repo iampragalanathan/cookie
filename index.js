@@ -1,5 +1,8 @@
 const modol=document.getElementById("modal")
 const closeBtn= document.getElementById("modal-close-btn")
+const formBtn=document.getElementById("consent-form")
+const modalBtn=document.getElementById("modal-text")
+
 // modol.style.display="none"
 function model(){
 
@@ -11,6 +14,24 @@ closeBtn.addEventListener("click",function(){
 
     modol.style.display="none"
 })
+
+formBtn.addEventListener("submit",function(e){
+
+    e.preventDefault()
+    modalBtn.innerHTML=`<div class="modal-inner-loading">
+     <img src="images/loading.svg" class="loading"/>
+     
+     <p id="uploadText">Uploading your data to the dark web....</p>
+    </div>`
+
+    setTimeout(() => {
+        
+    }, timeout);(function(){
+        document.getElementById("uploadText").textContent="Making the sale...."},1500)
+})
+
+
+
 
 
 
