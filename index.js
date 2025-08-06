@@ -24,10 +24,20 @@ formBtn.addEventListener("submit",function(e){
      <p id="uploadText">Uploading your data to the dark web....</p>
     </div>`
 
-    setTimeout(() => {
-        
-    }, timeout);(function(){
+   setTimeout(function(){
         document.getElementById("uploadText").textContent="Making the sale...."},1500)
+
+    setTimeout(function(){
+           document.getElementById("modal-inner").innerHTML=`<h2>Thank you sucker!</h2>
+         <p>we just sold the rights to your eternal soul</p>
+     <div class="idiot-gif">
+	   <img src="/images/pirate.gif" alt="pirate laugh"/></div>`
+       
+        },3000)
+     
+
+        
+      
 })
 
 
