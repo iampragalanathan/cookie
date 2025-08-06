@@ -8,6 +8,11 @@ let quantity = 0;
 decrement.addEventListener("click", function () {
   quantity--;
   //   quantity = quantity - 1;
+  if(quantity<=0){
+
+    decrement.disabled=true
+    cartBtn.disabled=true
+  }
 
   quantityDisplay.innerText = quantity;
 });
@@ -15,6 +20,11 @@ decrement.addEventListener("click", function () {
 increment.addEventListener("click", function () {
   quantity++;
   //   quantity = quantity + 1;
+  if(quantity > 0){
+
+    decrement.disabled=false
+    cartBtn.disabled=false
+  }
 
   quantityDisplay.innerText = quantity;
 });

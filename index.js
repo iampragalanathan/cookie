@@ -14,6 +14,8 @@ setTimeout(model,1500)
 closeBtn.addEventListener("click",function(){
 
     modol.style.display="none"
+    
+
 })
 
 formBtn.addEventListener("submit",function(e){
