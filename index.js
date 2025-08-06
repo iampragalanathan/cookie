@@ -3,6 +3,7 @@ const closeBtn= document.getElementById("modal-close-btn")
 const formBtn=document.getElementById("consent-form")
 const modalBtn=document.getElementById("modal-text")
 
+
 // modol.style.display="none"
 function model(){
 
@@ -18,6 +19,10 @@ closeBtn.addEventListener("click",function(){
 formBtn.addEventListener("submit",function(e){
 
     e.preventDefault()
+
+    const consentFormData=new FormData(consentForm)
+    const fullName=consentFormData.get("userName")
+
     modalBtn.innerHTML=`<div class="modal-inner-loading">
      <img src="images/loading.svg" class="loading"/>
      
@@ -28,21 +33,34 @@ formBtn.addEventListener("submit",function(e){
         document.getElementById("uploadText").textContent="Making the sale...."},1500)
 
     setTimeout(function(){
-           document.getElementById("modal-inner").innerHTML=`<h2>Thank you sucker!</h2>
+           document.getElementById("modal-inner").innerHTML=`<h2>Thank you <span class="modal-display-name"></span> sucker!</h2>
          <p>we just sold the rights to your eternal soul</p>
      <div class="idiot-gif">
 	   <img src="/images/pirate.gif" alt="pirate laugh"/></div>`
-       
-        },3000)
-     
-
-        
-      
+        },3000)  
 })
 
 
 
 
+// const loginForm=document.getElementById("login-form")
+// // console.log("form refreshed the js")
+
+// loginForm.addEventListener("submit",function(e){
+
+//     e.preventDefault()
+//     // console.log(e)
+//     // console.log(e.target)
+//     // console.log(e.target.id)
+//     const loginFormData=new FormData(loginForm)
+//     console.log(loginFormData)
+
+//     const name=loginFormData.get("astronautName")
+//     const email=loginFormData.get("astronautEmail")
+//     const password=loginFormData.get("astronautPassword")
+
+//     console.log(name,email,password)
+// })
 
 
 
