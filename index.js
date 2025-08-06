@@ -37,7 +37,7 @@ formBtn.addEventListener("submit",function(e){
         document.getElementById("uploadText").textContent="Making the sale...."},1500)
 
     setTimeout(function(){
-           document.getElementById("modal-inner").innerHTML=`<h2>Thank you <span class="modal-display-name"></span> sucker!</h2>
+           document.getElementById("modal-inner").innerHTML=`<h2>Thank you <span class="modal-display-name">${fullName}</span> sucker!</h2>
          <p>we just sold the rights to your eternal soul</p>
      <div class="idiot-gif">
 	   <img src="/images/pirate.gif" alt="pirate laugh"/></div>`
