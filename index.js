@@ -2,6 +2,7 @@ const modol=document.getElementById("modal")
 const closeBtn= document.getElementById("modal-close-btn")
 const formBtn=document.getElementById("consent-form")
 const modalBtn=document.getElementById("modal-text")
+const declineBtn=document.getElementById("decline-btn")
 
 
 // modol.style.display="none"
@@ -16,13 +17,14 @@ closeBtn.addEventListener("click",function(){
     modol.style.display="none"
     
 
+
 })
 
 formBtn.addEventListener("submit",function(e){
 
     e.preventDefault()
 
-    const consentFormData=new FormData(consent-form)
+    const consentFormData=new FormData(formBtn)
     const fullName=consentFormData.get("userName")
 
     modalBtn.innerHTML=`<div class="modal-inner-loading">
@@ -39,10 +41,14 @@ formBtn.addEventListener("submit",function(e){
          <p>we just sold the rights to your eternal soul</p>
      <div class="idiot-gif">
 	   <img src="/images/pirate.gif" alt="pirate laugh"/></div>`
+
+      closeBtn.disabled=false
         },3000)  
 })
+declineBtn.addEventListener("mouseenter",function(){
 
-
+    console.log("hii ")
+})
 
 
 // const loginForm=document.getElementById("login-form")
