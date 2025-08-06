@@ -20,7 +20,7 @@ formBtn.addEventListener("submit",function(e){
 
     e.preventDefault()
 
-    const consentFormData=new FormData(consentForm)
+    const consentFormData=new FormData(consent-form)
     const fullName=consentFormData.get("userName")
 
     modalBtn.innerHTML=`<div class="modal-inner-loading">
