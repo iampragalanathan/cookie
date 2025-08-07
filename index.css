@@ -134,6 +134,7 @@ Challenge:
     padding: 8px 16px;
     display: flex;
     justify-content: center;
+    
 }
 
 .modal-btn{
@@ -166,4 +167,9 @@ input{
     height: 140px;
     line-height: 23px;
     margin-bottom: 0;
+}
+
+.modal-choice-btns-reverse{
+
+    flex-direction: row-reverse;
 }

@@ -3,6 +3,7 @@ const closeBtn= document.getElementById("modal-close-btn")
 const formBtn=document.getElementById("consent-form")
 const modalBtn=document.getElementById("modal-text")
 const declineBtn=document.getElementById("decline-btn")
+const choiceBtn=document.getElementById("modal-choice-btns")
 
 
 // modol.style.display="none"
@@ -50,6 +51,10 @@ declineBtn.addEventListener("mouseenter",function(){
     console.log("hii ")
 })
 
+choiceBtn.addEventListener("mouseenter", function () {
+
+    choiceBtn.classList.toggle("modal-choice-btns-reverse")
+});
 
 // const loginForm=document.getElementById("login-form")
 // // console.log("form refreshed the js")
